@@ -11,7 +11,7 @@ def check_if_the_programme_exist():
         print('No exist')
 
 
-#czy jes to możliwe miec dwie funckje
+
 
 def add_new_words_to_():
     """Programe which give new words into dictonary
