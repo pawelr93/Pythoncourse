@@ -22,7 +22,7 @@ class RecipeGenerator():
         if type(self.__ingredient)==int:
             raise ValueError("ingredient should only in str format")
         # if self.__ingredient=='':
-        #     raise ValueError("ingredient should only in str format")
+        #     break 
         # self.__ingredient=ingredient
         self.__ingredient = ingredient.replace(' ', ",")
 
