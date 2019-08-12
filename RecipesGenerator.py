@@ -11,6 +11,8 @@ class RecipeGenerator():
         self.__ingredient=None
         self.__response=None
 
+    def __str__(self):
+        return f"I base of recipes put your ingredients"
     @property
     def ingredient(self):
         return self.__ingredient
@@ -19,6 +21,8 @@ class RecipeGenerator():
 
         if type(self.__ingredient)==int:
             raise ValueError("ingredient should only in str format")
+        # if self.__ingredient=='':
+        #     raise ValueError("ingredient should only in str format")
         # self.__ingredient=ingredient
         self.__ingredient = ingredient.replace(' ', ",")
 
@@ -39,5 +43,5 @@ class RecipeGenerator():
             print(recipe['title'])
             print(30 * '-')
             print(recipe['ingredients'])
-generator=RecipeGenerator()
-generator.working('onion,eggs,bacon')
+# generator=RecipeGenerator()
+# generator.working('onion,eggs,bacon')
